@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditNilai">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingRight="15dp"
+        android:background="@color/birutua"
+        android:paddingLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:paddingRight="50dp"
+            android:text=" Entry Data KHS "
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:paddingRight="50dp"
+            android:text=" NIM "
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/nim_diterima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="A11.2021.13256"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:paddingRight="20dp"
+            android:text=" NAMA "
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/nama_diterima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Nabilla Nur Eka Fitriani"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:paddingRight="10dp"
+            android:text="Jurusan "
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/jurusan_diterima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="S1 - TI"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frame06"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:paddingRight="75dp"
+                android:background="@color/abu"
+                android:text=" Kode "
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/editkode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Masukkan Data"
+                android:background="@color/abu"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:paddingRight="5dp"
+                android:background="@color/abu"
+                android:text=" MataKuliah "
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/editMatkul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Masukkan Data"
+                android:background="@color/abu"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:paddingRight="85dp"
+                android:background="@color/abu"
+                android:text=" SKS "
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/editsks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Masukkan Data"
+                android:background="@color/abu"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:paddingRight="35dp"
+                android:background="@color/abu"
+                android:text=" N.Angka "
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/editangka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Masukkan Data"
+                android:background="@color/abu"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:paddingRight="45dp"
+                android:background="@color/abu"
+                android:text=" N.Huruf "
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/edithuruf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Masukkan Data"
+                android:background="@color/abu"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:paddingRight="40dp"
+                android:background="@color/abu"
+                android:text=" Predikat "
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/editpredikat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:hint="Masukkan Data"
+                android:background="@color/abu"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/buttonsimpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/frame01"
+            android:backgroundTint="@color/biru"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:text="Save" />
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/buttondelete"
+            android:layout_width="wrap_content"
+            android:background="@drawable/frame01"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/merah"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:text="Hapus" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
