@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Javascript</title>
+
+    <style>
+        body{
+            background-color: aquamarine;
+            font-family: sans-serif;
+        }
+        .data{
+            padding: 1em;
+            margin: 2em auto;
+            width: 17em;
+            background:cadetblue;
+        }
+        label{
+            font-size: 10pt;
+            color: white;
+        }
+        input[type="text"],textarea{
+            padding: 8px;
+            width: 95%;
+            background: #efefef;
+            border: 0;
+            font-size: 10pt;
+            margin: 6px 0px;
+        }
+        .tombol{
+            background: black;
+            color: white;
+            border: 0;
+            padding: 5px 8px;
+        }
+        /* Jam dan Tanggal */
+        .jam_digital{
+            overflow: hidden;
+            width: 330px;
+            margin: 20px auto;
+            border: 5px solid black;
+            background-color:burlywood;
+        }
+        .kotak{
+            float: left;
+            width: 110px;
+            height: 100px;
+        }
+        .jam_digital p{
+            color: black;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center><h2>=== Form Validasi Javascript ===</h2></center>
+    <div class="data">
+        <form action="#" method="post" onsubmit="validasi()">
+            <div>
+                <label>Nama Lengkap</label>
+                <input type="text" name="nama" id="nama">
+            </div>
+            <div>
+                <label>Alamat</label>
+                <textarea cols="40" rows="5" name="alamat" id="alamat"></textarea>
+            </div>
+            <div>
+                <input type="submit" class="tombol">
+            </div>
+        </form>
+    </div>
+
+    <h2 align="center">=== Tanggal dan Jam Digital ===</h2>
+    <h3 align="center" id="tanggal"></h3>
+    <div class="jam_digital" id="jam_digital">
+        <div class="kotak">
+            <p id="jam"></p>
+        </div>
+        <div class="kotak">
+            <p id="menit"></p>
+        </div>
+        <div class="kotak">
+            <p id="detik"></p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function validasi(){
+            var nama = document.getElementById("nama").value;
+            var alamat = document.getElementById("alamat").value;
+            // console.log(nama);
+            var a1 = "Anda harus mengisi data ";
+
+            if(nama == ""){
+                a1 = a1 + "nama, ";
+                // a1 = "Anda harus mengisi nama,";
+                console.log("Tidak ada nama");
+            }
+            if(alamat == ""){
+                a1 = a1 + "alamat.";
+                // a1 = "Anda harus mengisi data alamat.";
+                // a1 = "Anda harus mengisi data nama,alamat.";
+                console.log("Tidak ada alamat");
+            }
+            if(a1 == "Anda harus mengisi data "){
+                console.log("Data anda tidak lengkap");
+                alert ("Data anda tidak lengkap");
+            } else{
+                alert(a1);
+            }
+        }
+
+        var tgl = new Date();
+        document.getElementById("tanggal").innerHTML = "Waktu akses "+ tgl;
+        
+        window.setTimeout("waktu()", 1000);
+        function waktu(){
+            var waktu = new Date();
+            setTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = waktu.getHours();
+            document.getElementById("menit").innerHTML = waktu.getMinutes();
+            document.getElementById("detik").innerHTML = waktu.getSeconds();
+        }
+
+        //  mengubah warna css per detik
+        var i=0;
+        function change(){
+            // var classJamDigital = document.getElementsByClassName("jam_digital");
+            var classJamDigital = document.getElementById("jam_digital");
+            var color = ["AntiqueWhite", "Blue", "AliceBlue", "BlueViolet"];
+
+            // classJamDigital[0].style.backgroundColor = color[i]; //class
+            classJamDigital.style.backgroundColor = color[i]; //id
+            
+            i=(i+1)%color.length;
+        }
+        setInterval(change, 1000);
+    </script>
+</body>
+</html>

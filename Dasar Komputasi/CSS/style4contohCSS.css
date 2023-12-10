@@ -1,0 +1,23 @@
+div{
+    background-color: aquamarine;
+    width: 300px;
+    /* lebar */
+    padding: 25px ;
+    /* ruang antara konten dan border */
+    border: 25px solid burlywood;
+    /* garis antara padding dan margin - ukuran style - color */
+    margin: 25px ;
+}
+.pc{
+    border-style: dotted;
+    text-align: right;
+    background-color: chartreuse;
+}
+#pid{
+    border-style: dotted dashed solid double;
+    /* atas kanan bawah kiri */
+    color: darkcyan;
+}
+h2,p{
+    text-align: center;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script type="text/javascript">
+        function ftambah(){
+            var a = document.forms["Kalkulator"]["fnilaiA"].value;
+            var b = document.forms["Kalkulator"]["fnilaiB"].value;
+            var c = Number(a) + Number(b);
+            document.getElementById("hasil").innerHTML=c;
+        }
+        function fkurang(){
+            var a = document.forms["Kalkulator"]["fnilaiA"].value;
+            var b = document.forms["Kalkulator"]["fnilaiB"].value;
+            var c = Number(a) - Number(b);
+            document.getElementById("hasil").innerHTML=c;
+        }
+        function fkali(){
+            var a = document.forms["Kalkulator"]["fnilaiA"].value;
+            var b = document.forms["Kalkulator"]["fnilaiB"].value;
+            var c = Number(a) * Number(b);
+            document.getElementById("hasil").innerHTML=c;
+        }
+        function fbagi(){
+            var a = document.forms["Kalkulator"]["fnilaiA"].value;
+            var b = document.forms["Kalkulator"]["fnilaiB"].value;
+            var c = Number(a) / Number(b);
+            document.getElementById("hasil").innerHTML=c;
+        }
+    </script>
+</head>
+<body>
+    <div style="background-color:rgb(230, 11, 11)">
+        <form name="Kalkulator">
+            <div>
+                <label for="nilaiA">Nilai 1: </label>
+                <input type="number" id="nilaiA" name="fnilaiA">
+            </div>
+            <div>
+                <label for="nilaiB">Nilai 2: </label>
+                <input type="number" id="nilaiB" name="fnilaiB">
+            </div>
+            <div>
+                <input type="button" value="+" onclick="ftambah()">
+                <input type="button" value="-" onclick="fkurang()">
+                <input type="button" value="x" onclick="fkali()">
+                <input type="button" value="/" onclick="fbagi()">
+            </div>
+        </form>
+    </div>
+    <div style="background-color:rgb(238, 216, 17)">
+        <div>
+            <div>Hasil</div>
+            <div id="hasil"></div>
+        </div>
+    </div>
+</body>
+</html>
